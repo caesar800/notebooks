@@ -1,0 +1,17 @@
+git init					初始化仓库
+git config --global user.name "你的名字"	设置你使用的git的名称
+git config --global user.email "你的邮箱:	设置你使用的git的邮箱
+git config --list				查看设置
+git config --global --unset user.emai		删除user.emai项
+
+git add "文件名"				添加一个文件到暂存区
+git commit -m "备注提交信息"			提交文件到仓库
+git status					查看当前状态
+
+git reset HEAD					文件从暂存区域恢复到工作区域
+
+git checkout -- 文件名				恢复命令
+
+git log						查看提交了几个版本
+
+

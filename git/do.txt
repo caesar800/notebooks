@@ -8,9 +8,18 @@ git add "文件名"				添加一个文件到暂存区
 git commit -m "备注提交信息"			提交文件到仓库
 git status					查看当前状态
 
-git reset HEAD					文件从暂存区域恢复到工作区域
+git reset HEAD~					文件从仓库恢复到暂存区域，恢复为上一个版本
+git reset HEAD~~				回滚两个快照
+git reset HEAD~10				回滚10个快照
+git reset --mixed HEAD~				默认，同HEAD~
+git reset --soft HEAD~				仅撤销提交
+git reset --hard HEAD~				从仓库直接恢复到工作区域
+git reset 版本快照 文件名/路径			恢复指定文件
+git reset 版本快照的ID号			恢复指定版本
 
-git checkout -- 文件名				恢复命令
+git reflog					查看所有版本ID
+
+git checkout -- 文件名				文件从暂存区域恢复到工作区域	
 
 git log						查看提交了几个版本
 

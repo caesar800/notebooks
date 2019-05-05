@@ -3,10 +3,14 @@ git config --global user.name "你的名字"	设置你使用的git的名称
 git config --global user.email "你的邮箱:	设置你使用的git的邮箱
 git config --list				查看设置
 git config --global --unset user.emai		删除user.emai项
+git remote add origin "url"			增加origin
+git remote remove origin			删除origin
 
 git add "文件名"				添加一个文件到暂存区
 git commit -m "备注提交信息"			提交文件到仓库
 git status					查看当前状态
+
+git pull origin master				从远程仓库取回数据到本地
 
 git reset HEAD~					文件从仓库恢复到暂存区域，恢复为上一个版本
 git reset HEAD~~				回滚两个快照

@@ -11,6 +11,7 @@ git commit -m "备注提交信息"			提交文件到仓库
 git status					查看当前状态
 
 git pull origin master				从远程仓库取回数据到本地
+git push origin master				把数据从本地推送到远程仓库
 
 git reset HEAD~					文件从仓库恢复到暂存区域，恢复为上一个版本
 git reset HEAD~~				回滚两个快照

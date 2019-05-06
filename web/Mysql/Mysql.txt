@@ -1,4 +1,4 @@
-��һ�� Mysql���
+﻿第一章 Mysql简介
 
-1��1Mysql�Ľ���
-1��2Mysql�İ�װ
+1－1Mysql的介绍
+1－2Mysql的安装

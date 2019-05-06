@@ -1,31 +1,38 @@
-git init					³õÊ¼»¯²Ö¿â
-git config --global user.name "ÄãµÄÃû×Ö"	ÉèÖÃÄãÊ¹ÓÃµÄgitµÄÃû³Æ
-git config --global user.email "ÄãµÄÓÊÏä:	ÉèÖÃÄãÊ¹ÓÃµÄgitµÄÓÊÏä
-git config --list				²é¿´ÉèÖÃ
-git config --global --unset user.emai		É¾³ıuser.emaiÏî
-git remote add origin "url"			Ôö¼Óorigin
-git remote remove origin			É¾³ıorigin
+ï»¿git init					åˆå§‹åŒ–ä»“åº“
+git config --global user.name "ä½ çš„åå­—"	è®¾ç½®ä½ ä½¿ç”¨çš„gitçš„åç§°
+git config --global user.email "ä½ çš„é‚®ç®±:	è®¾ç½®ä½ ä½¿ç”¨çš„gitçš„é‚®ç®±
+git config --list				æŸ¥çœ‹è®¾ç½®
+git config --global --unset user.emai		åˆ é™¤user.emaié¡¹
+git remote add origin "url"			å¢åŠ origin
+git remote remove origin			åˆ é™¤origin
 
-git add "ÎÄ¼şÃû"				Ìí¼ÓÒ»¸öÎÄ¼şµ½Ôİ´æÇø
-git commit -m "±¸×¢Ìá½»ĞÅÏ¢"			Ìá½»ÎÄ¼şµ½²Ö¿â
-git status					²é¿´µ±Ç°×´Ì¬
+git diff					æ¯”è¾ƒå·¥ä½œåŒºåŸŸä¸æš‚å­˜åŒºåŸŸçš„æ–‡ä»¶1ä¸æ–‡ä»¶2çš„ä¸åŒ
+git diff å¿«ç…§1ID å¿«ç…§2ID			æ¯”è¾ƒä¸¤ä¸ªå¿«ç…§çš„ä¸åŒ
+git diff å¿«ç…§ID					æ¯”è¾ƒå¿«ç…§ä¸å·¥ä½œåŒºçš„ä¸åŒ
+git diff HEAD					æ¯”è¾ƒæœ€æ–°æäº¤çš„å¿«ç…§ä¸å·¥ä½œåŒºçš„ä¸åŒ
+git diff --cached				æ¯”è¾ƒæš‚å­˜åŒºä¸gitä»“åº“çš„ä¸åŒ
+git diff --cached å¿«ç…§ID			æ¯”è¾ƒæš‚å­˜åŒºä¸gitä»“åº“å¿«ç…§IDçš„ä¸åŒ
 
-git pull origin master				´ÓÔ¶³Ì²Ö¿âÈ¡»ØÊı¾İµ½±¾µØ
-git push origin master				°ÑÊı¾İ´Ó±¾µØÍÆËÍµ½Ô¶³Ì²Ö¿â
+git add "æ–‡ä»¶å"				æ·»åŠ ä¸€ä¸ªæ–‡ä»¶åˆ°æš‚å­˜åŒº
+git commit -m "å¤‡æ³¨æäº¤ä¿¡æ¯"			æäº¤æ–‡ä»¶åˆ°ä»“åº“
+git status					æŸ¥çœ‹å½“å‰çŠ¶æ€
 
-git reset HEAD~					ÎÄ¼ş´Ó²Ö¿â»Ö¸´µ½Ôİ´æÇøÓò£¬»Ö¸´ÎªÉÏÒ»¸ö°æ±¾
-git reset HEAD~~				»Ø¹öÁ½¸ö¿ìÕÕ
-git reset HEAD~10				»Ø¹ö10¸ö¿ìÕÕ
-git reset --mixed HEAD~				Ä¬ÈÏ£¬Í¬HEAD~
-git reset --soft HEAD~				½ö³·ÏúÌá½»
-git reset --hard HEAD~				´Ó²Ö¿âÖ±½Ó»Ö¸´µ½¹¤×÷ÇøÓò
-git reset °æ±¾¿ìÕÕ ÎÄ¼şÃû/Â·¾¶			»Ö¸´Ö¸¶¨ÎÄ¼ş
-git reset °æ±¾¿ìÕÕµÄIDºÅ			»Ö¸´Ö¸¶¨°æ±¾
+git pull origin master				ä»è¿œç¨‹ä»“åº“å–å›æ•°æ®åˆ°æœ¬åœ°
+git push origin master				æŠŠæ•°æ®ä»æœ¬åœ°æ¨é€åˆ°è¿œç¨‹ä»“åº“
 
-git reflog					²é¿´ËùÓĞ°æ±¾ID
+git reset HEAD~					æ–‡ä»¶ä»ä»“åº“æ¢å¤åˆ°æš‚å­˜åŒºåŸŸï¼Œæ¢å¤ä¸ºä¸Šä¸€ä¸ªç‰ˆæœ¬
+git reset HEAD~~				å›æ»šä¸¤ä¸ªå¿«ç…§
+git reset HEAD~10				å›æ»š10ä¸ªå¿«ç…§
+git reset --mixed HEAD~				é»˜è®¤ï¼ŒåŒHEAD~
+git reset --soft HEAD~				ä»…æ’¤é”€æäº¤
+git reset --hard HEAD~				ä»ä»“åº“ç›´æ¥æ¢å¤åˆ°å·¥ä½œåŒºåŸŸ
+git reset ç‰ˆæœ¬å¿«ç…§ æ–‡ä»¶å/è·¯å¾„			æ¢å¤æŒ‡å®šæ–‡ä»¶
+git reset ç‰ˆæœ¬å¿«ç…§çš„IDå·			æ¢å¤æŒ‡å®šç‰ˆæœ¬
 
-git checkout -- ÎÄ¼şÃû				ÎÄ¼ş´ÓÔİ´æÇøÓò»Ö¸´µ½¹¤×÷ÇøÓò	
+git reflog					æŸ¥çœ‹æ‰€æœ‰ç‰ˆæœ¬ID
 
-git log						²é¿´Ìá½»ÁË¼¸¸ö°æ±¾
+git checkout -- æ–‡ä»¶å				æ–‡ä»¶ä»æš‚å­˜åŒºåŸŸæ¢å¤åˆ°å·¥ä½œåŒºåŸŸ	
+
+git log						æŸ¥çœ‹æäº¤äº†å‡ ä¸ªç‰ˆæœ¬
 
 

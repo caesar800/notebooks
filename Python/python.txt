@@ -1,0 +1,5 @@
+﻿第一章 python起步
+
+1-1	选择python的理由
+1-2	python的安装
+

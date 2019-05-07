@@ -1,4 +1,5 @@
 ﻿第一章 Mysql简介
 
-1－1Mysql的介绍
-1－2Mysql的安装
+1-1	Mysql的介绍
+1-2	Mysql的安装
+1-3	Mysql的配置

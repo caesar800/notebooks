@@ -13,6 +13,9 @@ git diff HEAD					比较最新提交的快照与工作区的不同
 git diff --cached				比较暂存区与git仓库的不同
 git diff --cached 快照ID			比较暂存区与git仓库快照ID的不同
 
+git branch 分支名				创建分支
+git chechout 分支名				切换分支
+
 git add "文件名"				添加一个文件到暂存区
 git commit -m "备注提交信息"			提交文件到仓库
 git status					查看当前状态
@@ -42,5 +45,10 @@ git reflog					查看所有版本ID
 git checkout -- 文件名				文件从暂存区域恢复到工作区域	
 
 git log						查看提交了几个版本
+git log --decorate				显示指针指向
+git log --decorate --oneline			只显示一行
+git log --decorate --oneline --graph		图形化显示
+git log --decorate --oneline --graph --all	显示所有分支
+
 
 

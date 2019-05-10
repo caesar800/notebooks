@@ -9,3 +9,23 @@ F8 逐句运行
 ctrl + F8 运行到当前行
 F9 断点设置
 ctrl + break 或者ESC终止当前程序
+1-5	对象
+单元格
+[A1]
+range[A1:B2]
+cells(行，列)
+activecell
+selection
+工作表
+worksheets(1)
+worksheets("abc")
+Sheet1
+ActiveWorkbook
+工作簿
+workbooks(1)
+workbooks("abc.xlsx")
+Thisworkbook	当前工作簿
+Activeworkbook	活动工作簿
+
+
+
